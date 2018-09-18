@@ -1,0 +1,21 @@
+﻿<Window x:Class="CoinCollectionManagement.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoinCollectionManagement"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <!-- Username field -->
+        <Label Content="Username" HorizontalAlignment="Left" Margin="289,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.164,-2.113" Height="26" Width="64"/>
+        <TextBox x:Name="usernameField" HorizontalAlignment="Left" Height="23" Margin="358,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+
+        <!-- Password field -->
+        <Label Content="Password" HorizontalAlignment="Left" Margin="289,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.164,-2.113" Height="26" Width="59"/>
+        <PasswordBox x:Name="passwordField" HorizontalAlignment="Left" Margin="358,192,0,0" VerticalAlignment="Top" Width="156" Height="23"/>
+
+        <!-- Login button -->
+        <Button Click="AttemptLogin" Content="Login" HorizontalAlignment="Left" Margin="439,239,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="CoinCollectionManagement.ReadFileStatus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoinCollectionManagement"
+        mc:Ignorable="d"
+        Title="Lendo o ficheiro..." Height="273.491" Width="502.263">
+    <Grid>
+        <ListView x:Name="ReadingFileListView" HorizontalAlignment="Left" Height="224" VerticalAlignment="Top" Width="476" Margin="10,10,0,0">
+            <ListView.Resources>
+                <Style TargetType="GridViewColumnHeader">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                </Style>
+            </ListView.Resources>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

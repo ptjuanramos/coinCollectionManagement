@@ -1,0 +1,18 @@
+﻿<Window x:Class="CoinCollectionManagement.AddCollection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoinCollectionManagement"
+        mc:Ignorable="d"
+        Title="Adicionar coleções manualmente" Height="450" Width="800">
+    <Grid x:Name="DropExcelBox" AllowDrop="True" Drop="DropExcelBoxHandler">
+        <Border BorderThickness="2" BorderBrush="DarkGray" Margin="217,135,235.6,135" >
+            <!--<StackPanel Name="ImagePanel" AllowDrop="true" Margin="168,103,171.6,100" Background="#FF759CCD" Opacity="0.7"/> -->
+        </Border>
+        <Label x:Name="FileNameLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Largar aqui o ficheiro Excel" Margin="217,177,235.6,173" RenderTransformOrigin="0.499,0.134"/>
+        <Button Content="Configurar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="ButtonConfigurationHandler"/>
+        <Label Content="Sem configuração, a plataforma irá aplicar as configuração por defeito:&#xD;&#xA;Coluna A - Tipo de coleção(nota ou moeda)&#xD;&#xA;Coluna B - Valor de mercado&#xD;&#xA;Coluna C - Valor facial&#xD;&#xA;Coluna D - País&#xD;&#xA;Coluna E - Data&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Height="123"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="CoinCollectionManagement.CoinInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoinCollectionManagement"
+        mc:Ignorable="d"
+        Title="Informação da Moeda/Nota" Height="468.4" Width="384.8">
+
+    <Grid>
+        <Label Content="Valor Facial" HorizontalAlignment="Left" Margin="31,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.768,1.583"/>
+        <Image x:Name="collectionTypeIcon" HorizontalAlignment="Left" Height="100" Margin="31,18,0,0" VerticalAlignment="Top" Width="100" Source="/images/bill_icon.jpg"/>
+        <Label Content="Valor de mercado" HorizontalAlignment="Left" Margin="31,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.768,1.583"/>
+        <Label Content="Ano da Nota/Moeda" HorizontalAlignment="Left" Margin="31,319,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.768,1.583"/>
+        <DatePicker x:Name="dateValue" Text="Selecionar Data" HorizontalAlignment="Left" Margin="204,321,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.188,0.754" Width="136"/>
+        <TextBox x:Name="marketValue" HorizontalAlignment="Left" Height="23" Margin="204,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="facialValue" HorizontalAlignment="Left" Height="23" Margin="204,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <Label x:Name="billType" Content="{Binding Path=CoinTypeDataBind}" HorizontalAlignment="Left" Margin="142,87,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="updateCoinButton" Content="Guardar" HorizontalAlignment="Left" Margin="265,390,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="UpdateCoinButtonHandle"/>
+        <Button x:Name="closeCoinInfoButton" Content="Fechar" HorizontalAlignment="Left" Margin="185,390,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="DeleteCoinButtonHandler"/>
+        <Label Content="País da moeda/nota" HorizontalAlignment="Left" Margin="31,255,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.768,1.583"/>
+        <TextBox x:Name="countryValue" HorizontalAlignment="Left" Height="23" Margin="204,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <Button x:Name="deleteCoinButton" Content="Eliminar" HorizontalAlignment="Left" Margin="31,390,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="DeleteCoinButtonHandler"/>
+    </Grid>
+</Window>

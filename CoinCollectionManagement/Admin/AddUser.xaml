@@ -1,0 +1,28 @@
+﻿<Window x:Class="CoinCollectionManagement.Admin.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoinCollectionManagement.Admin"
+        mc:Ignorable="d"
+        Title="Adicionar utilizador" Height="450" Width="382.004">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="51,185,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="100" Height="26"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="51,307,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="100" Height="26"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="51,245,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="100" Height="26"/>
+        <Button x:Name="closeWindowButton" Content="Cancelar" HorizontalAlignment="Left" Margin="131.6,376,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="19" RenderTransformOrigin="0.525,-0.502"/>
+        <Button x:Name="addUserButton" Content="Adicionar" HorizontalAlignment="Left" Margin="211.6,376,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="19"/>
+        <Image x:Name="userImageRole" Source="/images/regular_icon.png" HorizontalAlignment="Left" Height="100" Margin="51,51,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="nameInput" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="113.6,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <TextBox x:Name="usernameInput" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="113.6,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <PasswordBox x:Name="passwordInput" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="113.6,310,0,0" VerticalAlignment="Top" Width="173"/>
+        <RadioButton x:Name="adminRoleButton" Content="Admin" Click="ChangeImageRole" Grid.Column="1" HorizontalAlignment="Left" Margin="113.6,136,0,0" VerticalAlignment="Top" Height="15" Width="54" />
+        <RadioButton x:Name="regularUserRoleButton" Content="Regular User" Click="ChangeImageRole" Grid.Column="1" HorizontalAlignment="Left" Margin="113.6,116,0,0" VerticalAlignment="Top" Height="15" Width="86" IsChecked="True"/>
+
+    </Grid>
+</Window>
